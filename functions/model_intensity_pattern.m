@@ -1,6 +1,6 @@
-
 function [intensity, mask, image] = model_intensity_pattern(squaresize, z, lambda, SNR)
 addpath('./functions')
+addpath('./data')
 
 imageorig = abs(cell2mat(struct2cell(load("demo_logo.mat"))));
 imageorig = imbinarize(imageorig(:,:,1));
